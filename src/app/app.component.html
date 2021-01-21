@@ -1,0 +1,52 @@
+<ion-app>
+  <ion-split-pane contentId="main-content">
+    <ion-menu contentId="main-content" type="overlay">
+      <ion-content>
+
+        <ion-list id="app-list">
+          <ion-list-header>Melody</ion-list-header>
+          <ion-note>Life is better with music!</ion-note>
+          <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
+            <ion-item (click)="selectedIndex = i" routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" [class.selected]="selectedIndex == i">
+              <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'" color="danger"></ion-icon>
+              <ion-label>{{ p.title }}</ion-label>
+            </ion-item>            
+          </ion-menu-toggle>
+        </ion-list>
+
+
+      <ion-item lines="none" (click)="clicked === 1 ? clicked = 0 : clicked = 1">
+        <ion-icon slot="start" name="settings" color="danger"></ion-icon>
+        Settings
+        <ion-icon slot="end" [name]="clicked? 'arrow-dropdown' : 'arrow-dropright'"></ion-icon>
+      </ion-item>
+
+      <ion-menu-toggle auto-hide="false">
+        <ion-list lines="none">
+          <ion-item menuclose [hidden]="!clicked" [routerLink]="['/folder/Profil']"
+            [queryParams]="{ type: 'profil' }" menuClose class="sub-menu">
+            <ion-icon slot="start" name="person-outline" color="danger" ></ion-icon>
+            Profil
+          </ion-item>
+          <ion-item menuclose [hidden]="!clicked" [routerLink]="['/folder/Profil']"
+            [queryParams]="{ type: 'notifications' }" menuClose class="sub-menu">
+            <ion-icon slot="start" name="notifications-outline" color="danger" ></ion-icon>
+            Notifications
+          </ion-item>
+        </ion-list>
+      </ion-menu-toggle>
+
+
+        <ion-list id="playlists">
+          <ion-list-header>Playlists</ion-list-header>
+          <ion-item *ngFor="let p of Playlists" lines="none">
+            <ion-icon slot="start" ios="bookmark-outline" md="bookmark-sharp" color="danger"></ion-icon>
+            <ion-label>{{ p }}</ion-label>
+          </ion-item>
+        </ion-list>
+
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet id="main-content"></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>
