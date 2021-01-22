@@ -25,3 +25,16 @@ If you don't have `git`, you can get it from [here](https://git-scm.com/download
 cd Melody
 ionic serve
 ```
+## Cordova
+The command `ionic serve` will start a live-reload server for your project in a web browser. When changes are made to any HTML, SASS, or JavaScript files, the browser will automatically reload.
+###
+With Cordova, you can test right in a simulator or use your own phone. To set up and the app on your phone, use the following commands:
+```npm
+ionic cordova platform add android
+```
+###
+Then:
+```npm
+ionic cordova run android --device
+```
+Note that your phone and your computer must be connected via a USB port.
