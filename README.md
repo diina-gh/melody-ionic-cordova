@@ -4,15 +4,22 @@
 
 ## First install the Ionic CLI:
 You should make sure that your computer has the lattest version of Node.js installed, before you continue.
+You can get Node.js from [here](https://nodejs.org/en/download/)
+
 ### Install the Ionic CLI with npm:
 ```npm
 npm install -g @ionic/cli
 ```
-If you don't have `git`, you can get it from [here](https://git-scm.com/downloads)
+You can get it from [here](https://git-scm.com/downloads)
 
 ## Clone Melody repository:
 ```git
-git clone https://github.com/diina-gh/ToDo-List/
-cd ToDo-List
+git clone https://github.com/diina-gh/Melody/
 ```
 If you don't have `git`, you can get it from [here](https://git-scm.com/downloads)
+
+## Start the project:
+```npm
+cd Melody
+ionic serve
+```
