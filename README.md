@@ -1,7 +1,8 @@
 ![Image](https://github.com/diina-gh/Melody/blob/main/src/assets/melody.jpg)
 ## Melody
 `Melody` is an app template created with [Ionic Framework](https://ionicframework.com/)
-####Ionic is an open source mobile UI toolkit for building high quality, cross-platform native and web app experiences.
+###
+Ionic is an open source mobile UI toolkit for building high quality, cross-platform native and web app experiences.
 
 ## First install the Ionic CLI:
 You should make sure that your computer has the lattest version of Node.js installed, before you continue.
