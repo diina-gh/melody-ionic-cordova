@@ -1,4 +1,4 @@
-![Image](https://github.com/diina-gh/Melody/blob/main/src/assets/melody.jpg)
+![Image](https://github.com/diina-gh/Melody/blob/main/src/assets/melody.png)
 ## Melody
 `Melody` is an app template created with [Ionic Framework](https://ionicframework.com/)
 ###
