@@ -1,5 +1,5 @@
 ![Image](https://github.com/diina-gh/Melody/blob/main/src/assets/melody.png)
-## Melody
+## melody-ionic-cordova
 `Melody` is an app template created with [Ionic Framework](https://ionicframework.com/)
 ###
 Ionic is an open source mobile UI toolkit for building high quality, cross-platform native and web app experiences.
